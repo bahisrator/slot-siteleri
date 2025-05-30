@@ -30,9 +30,19 @@
       margin: 20px 0;
     }
     .banner {
-      max-width: 100%;
-      height: auto;
-      margin: 20px 0;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    display: block; /* Ensures it behaves as a block element */
+}
+
+/* Desktop specific improvements */
+@media (min-width: 769px) {
+    .banner {
+        margin: 20px auto; /* Auto margins center the banner */
+        max-width: 90%; /* Reduces the excessive padding/width */
+    }
+}
     }
   </style>
 </head>
